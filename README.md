@@ -1,3 +1,3 @@
 # Table of Contents 
 
-- [Ops Challenge 02] (challenge.sh)
+- [Ops Challenge 02] (helloworld.sh)
