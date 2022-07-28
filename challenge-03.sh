@@ -9,7 +9,7 @@
 # Main
 function print_login_history {
     var=$(last -i)
-    echo $var
+    echo "$var"
 }
 
 # This calls print_login_history function
