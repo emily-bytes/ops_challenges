@@ -6,7 +6,6 @@
 # Purpose: This script creates directories through the use of an array
 
 # Main
-
 filename="test.txt"
 
 # Create four directories 
@@ -14,21 +13,16 @@ filename="test.txt"
 mkdir {dir1,dir2,dir3,dir4}
 
 # Declare array to hold four directories 
-DIRECTORY_ARRAY=("dir1" "dir2" "dir3" "dir4") 
+DIRECTORY_ARRAY=(dir1 dir2 dir3 dir4) 
 
 # Create a new .txt file within each directory by 
 # referencing the directory with array indices, 
 # not the literal directory path
 
-# for ((i=0; i<${array_length}; i++));
-# do 
-#    cd 
-
 for i in ${DIRECTORY_ARRAY[@]}
 do 
-    cd ${DIRECTORY_ARRAY[$i]}
-    touch $filename
-    cd ..      
+    /home/emilit/ops_challenges/$i; 
+    touch $filename    
 done
 
 # Test and validate 
