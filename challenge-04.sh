@@ -21,9 +21,14 @@ DIRECTORY_ARRAY=(dir1 dir2 dir3 dir4)
 
 for i in ${DIRECTORY_ARRAY[@]}
 do 
-    /home/emilit/ops_challenges/$i; 
-    touch $filename    
+    touch ./$i/$filename    # relative path 
 done
 
-# Test and validate 
+sleep 5s
+
+# Remove directories and their contents 
+for i in ${DIRECTORY_ARRAY[@]}
+do 
+    rm -r $i
+done
  
