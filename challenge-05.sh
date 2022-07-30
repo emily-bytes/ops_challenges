@@ -15,7 +15,7 @@ ps a
 
 # Prompt the user for a PID 
 echo What is your PID?
-read -a process_id
+read process_id   # read -a?
 
 # Kill process using PID 
 # do not kill essential processes required for OS
