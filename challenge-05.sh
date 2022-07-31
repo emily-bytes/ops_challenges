@@ -7,23 +7,33 @@
 
 # Main
 
-# Displays running processes 
+# Display running processes 
 ps a
 
-# Declare variable, PID
-#var=$process_id
-
 # Prompt the user for a PID 
-echo What is your PID?
-read process_id   # read -a?
+#echo What is your PID?
+#read process_id   
 
 # Kill process using PID 
 # do not kill essential processes required for OS
 # to work, such as kernel drivers 
-kill -15 "$process_id"
+#kill -15 "$process_id"
 
 # Use loop to faciliate the menu system of script, 
 # so that it can prompt the user to choose an 
 # option
+echo Enter procces ids to be terminated, separated by space: 
+read -a PID
+
+for i in ${PID[@]}
+do
+    kill -15 $i
+done
+
+# Test and validate: Display running processes to show PID was killed 
+# ps a 
+
+# End
+
 
 
