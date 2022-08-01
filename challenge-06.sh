@@ -15,15 +15,18 @@
 # Declare filename 
 # FILE=/home/emilit/ops_challenges/challenge-06.sh
 
-# Declare array 
-FILE_ARRAY=(challenge-06.sh challenge-07.sh challenge-08.sh challenge-09.sh challenge-10.sh) 
+# Declare array to contain filenames 
+FILENAMES=(challenge-06.sh challenge-07.sh challenge-08.sh challenge-09.sh challenge-10.sh) 
 
-for i in ${FILE_ARRAY[@]}
+for i in ${FILENAMES[@]}
 do 
-    if [ test -f "$i"] ; then   
+    # Conditional statment; if the file in array exists
+    if [ test -f /home/emilit/ops_challenges/$i ] ; then   
         echo "$i exists." 
     else 
-        echo "$i does not exist" && touch touch $i
+        # else state file does not exist and create it 
+        echo "$i does not exist" 
+        && touch /home/emilit/ops_challenges/$i
     fi 
 done 
 
