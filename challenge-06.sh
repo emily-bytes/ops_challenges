@@ -29,7 +29,7 @@ do
     else 
         # else,  state file does not exist and create it 
         echo "$i does not exist" && touch /home/emilit/ops_challenges/$i
-        echo ""
+        echo "$i has been created"
     fi 
 done 
 
