@@ -7,33 +7,36 @@
 
 # Main
 
+# Welcome message
+echo This script kills a process and allows user to repeat
+
 # Display running processes 
 ps a
 
-# Prompt the user for a PID 
-#echo What is your PID?
-#read process_id   
+# Prompt the user for a PID and kill the process 
+# and use a loop to repeat this process if needed
 
-# Kill process using PID 
-# do not kill essential processes required for OS
-# to work, such as kernel drivers 
-#kill -15 "$process_id"
+menu=y
+until [ $menu = "n" ]; do 
+   echo Enter a PID to be terminated: 
+   read PID
+   kill -15 "$PID"
 
-# Use loop to faciliate the menu system of script, 
-# so that it can prompt the user to choose an 
-# option
-echo Enter procces ids to be terminated, separated by space: 
-read -a PID
+   echo Would you like to kill another process? yes = y/no = n
+   read menu 
+done 
 
-for i in ${PID[@]}
-do
-    kill -15 $i
-done
+echo "End of script"
 
 # Test and validate: Display running processes to show PID was killed 
 # ps a 
+ps a 
 
 # End
 
-
-
+# echo Enter procces ids to be terminated, separated by space: 
+# read -a PID
+# for i in ${PID[@]}
+# do
+#    kill -15 $i
+# done
