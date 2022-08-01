@@ -6,26 +6,33 @@
 # Purpose: Use at least one array, one loop, and one 
 # conditional 
 
+# Main
 # This script detects if a file or directory exists,
 # then creates it if it does not exist 
 
-# Main
+# Welcome message
+echo "This script detects if a file exists and then creates it if it does not exist"
 
-# Declare filename 
-# FILE=/home/emilit/ops_challenges/challenge-06.sh
+# Prompt user for filename(s)
+echo "Enter filename(s), separated by space: " 
+read -a filename     # read user input into array called "filename"
 
-# Declare array to contain filenames 
-FILENAMES=(challenge-05.sh challenge-07.sh challenge-08.sh challenge-09.sh challenge-10.sh) 
+echo $'\nYou have entered '${#filename[@]}' files.' 
 
-for i in ${FILENAMES[@]}
+# For loop 
+for i in ${filename[@]}
 do 
-    # Conditional statment; if the file in array exists
+    # Conditional statment; if the file in the array exists
+    # print "it exists"
     if [[ -f /home/emilit/ops_challenges/$i ]]; then 
-        echo "$i exists." 
+        echo $"\n$i exists." 
     else 
-        # else state file does not exist and create it 
+        # else,  state file does not exist and create it 
         echo "$i does not exist" && touch /home/emilit/ops_challenges/$i
     fi 
 done 
+
+# Goodbye message
+echo $'\nThank you for using the file creator script'
 
 # End 
