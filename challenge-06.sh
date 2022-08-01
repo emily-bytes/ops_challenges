@@ -17,7 +17,7 @@ echo "This script detects if a file exists and then creates it if it does not ex
 echo "Enter filename(s), separated by space: " 
 read -a filename     # read user input into array called "filename"
 
-echo $'\nYou have entered '${#filename[@]}' files.' 
+echo $'\nYou have entered '${#filename[@]}' file(s).' 
 
 # For loop 
 for i in ${filename[@]}
@@ -25,10 +25,11 @@ do
     # Conditional statment; if the file in the array exists
     # print "it exists"
     if [[ -f /home/emilit/ops_challenges/$i ]]; then 
-        echo $"\n$i exists." 
+        echo "$i exists." 
     else 
         # else,  state file does not exist and create it 
         echo "$i does not exist" && touch /home/emilit/ops_challenges/$i
+        echo ""
     fi 
 done 
 
