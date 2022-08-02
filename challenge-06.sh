@@ -35,7 +35,7 @@ until [ $menu = "n" ]; do
         fi 
     done 
 
-    echo Would you like to run this script again? yes = y/no = n
+    echo "Would you like to run this script again? (yes = y/no = n)"
     read menu 
 done 
 
