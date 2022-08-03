@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Script: Ops 201 Class 06 Ops Challenge Solution
+# Script: Ops 201 Class 07 Ops Challenge Solution
 # Author: Emily Lee
-# Date of latest revision: August 1, 2022
+# Date of latest revision: August 2, 2022
 # Purpose: Use grep to remove irrelevant information from the
 # lshw output 
 
