@@ -10,10 +10,15 @@
 # and RAM performance of a Ubuntu computer. 
 # Main
 
-# Welcome message
-
 # Uses lshw to display system information to include: CPU, RAM
-# Display adapter, and Network Adapter. 
-sudo lshw 
+# Display adapter, and Network Adapter via "grep command"
+echo "CPU: "
+sudo lshw | grep -A 7 '*-cpu' 
+echo "RAM: "
+sudo lshw | grep -A 3 '*-memory' 
+echo "Display Adapter: "
+sudo lshw | grep -A 13 '*-display'
+echo "Network Adapter "
+sudo lshw | grep -A 17 '*-network'
 
-
+# End 
