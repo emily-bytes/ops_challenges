@@ -25,10 +25,8 @@ Get-EventLog -LogName System
 Get-EventLog -LogName System -Newest 20
 
 # Print to the screen all sources of the 500 most recent entries in 
-# the system even log. Ensure that the full lines are displayed 
-Get-EventLog -LogName System -Newest 500 
-
-# windows powershell ise 
-# cd C:\User\emilit\Desktop\
+# the system event log. Ensure that the full lines are displayed 
+$EVENT = Get-EventLog -LogName System -Newest 500 
+$EVENT | Group-Object -Property Source 
 
 # End 
