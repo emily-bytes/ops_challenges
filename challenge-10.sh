@@ -28,8 +28,8 @@ for ($i=0; $i -lt 11; $i++)
 }
 
 # Close all Internet Explorer windows.
-explorer
-$p = Get-Process -Name "explorer"
+iexplore
+$p = Get-Process -Name "iexplore"
 Stop-Process -InputObject $p
 Get-Process | Where-Object {$_.HasExited}
 
