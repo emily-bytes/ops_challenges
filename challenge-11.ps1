@@ -2,7 +2,7 @@
 # Author: Emily Lee
 # Date of latest revision: August 8, 2022
 # Purpose: This script contains a collection of commands that automate Windows 
-# system configurations as much as possible, to save yourself precious time. 
+# system configurations
  
 # Main
 # Enable File and Printer Sharing
