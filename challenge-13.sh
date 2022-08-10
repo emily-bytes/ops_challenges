@@ -8,6 +8,9 @@
 
 # Main
 
+# Assign filename 
+filename='domain_info.txt'
+
 # This function includes the following operations: 
 # whois, dig, host, nslookup of domain name 
 function getDomainInfo {
@@ -27,6 +30,10 @@ until [ $menu = "n" ]; do
     # Call getDomainInfo function 
     getDomainInfo
 
+    # Adds domain info into a text file
+
+
+    # Ask user if they would like to repeat?
     echo "Would you like to get information for another domain? (yes = y/no = n)"
     read menu 
 done 
