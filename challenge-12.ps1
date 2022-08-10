@@ -6,10 +6,11 @@
 
 # Main
 
-# This function uses Select-String cmdlet to only return the IPv4 
-# address string and no other extraneous information.
+# Initialize variable and assign path to network_report.txt
 $Path="C:\Users\eslco\OneDrive\Desktop\network_report.txt" # or ".\network_report.txt"
 
+# This function uses Select-String cmdlet to only return the IPv4 
+# address string and no other extraneous information.
 function getIPaddress 
 {
     # Create a local file called network_report.txt that holds the contents
@@ -19,13 +20,13 @@ function getIPaddress
     # Use Select-String to search network_report.txt and return only 
     # the IP version 4 address
     Select-String -Path $Path -Pattern 'IPv4 Address'
+
+    # Remove the network_report.txt when you are finished searching it. 
+    Remove-Item -Path $Path
 }
 
 # Call function to get IP address 
 getIPaddress
-
-# Remove the network_report.txt when you are finished searching it. 
-Remove-Item -Path $Path
 
 # End 
 
