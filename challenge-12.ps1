@@ -8,7 +8,7 @@
 
 # This function uses Select-String cmdlet to only return the IPv4 
 # address string and no other extraneous information.
-$Path="C:\Users\eslco\OneDrive\Desktop\network_report.txt"
+$Path="C:\Users\eslco\OneDrive\Desktop\network_report.txt" # or ".\network_report.txt"
 
 function getIPaddress 
 {
