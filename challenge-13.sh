@@ -8,20 +8,22 @@
 
 # Main
 
-# Assign filename 
-filename='domain_info.txt'
+# Declare variable/array 
+filename="domain_info.txt" # Assign filename 
+commands=(whois dig host nslookup) # Array containing commands
 
 # This function includes the following operations: 
-# whois, dig, host, nslookup of domain name 
+# whois, dig, host, nslookup of domain name. It then 
+# writes ouput into text file 
 function getDomainInfo {
-    whois $domain
-    dig $domain
-    host $domain
-    nslookup $domain
+    for i in ${commands[@]}
+    do 
+        $i $domain >> $filename 
+    done
 }
 
 # This loop continues to ask for domain name until user
-# is done entering new domain names
+# is done entering new ones
 until [ $menu = "n" ]; do 
     # Prompt for user input and store in variable
     echo Enter domain: 
@@ -29,9 +31,6 @@ until [ $menu = "n" ]; do
 
     # Call getDomainInfo function 
     getDomainInfo
-
-    # Adds domain info into a text file
-
 
     # Ask user if they would like to repeat?
     echo "Would you like to get information for another domain? (yes = y/no = n)"
