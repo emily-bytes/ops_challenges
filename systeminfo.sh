@@ -18,12 +18,13 @@ hardware=(CPU RAM DisplayAdapter NetworkAdapter)
 num=(6 3 12 15) 
 commands=('*-cpu' '*-memory' '*-display' '*-network')
 
+# Computer Name 
+echo 'Computer Name' && sudo lshw | grep -E '' | head -n1
+
 # Use lshw to display system information to include: CPU, RAM
 # Display adapter, and Network Adapter via "grep command"
-
 for ((i=0;i<${#hardware[@]};i++))
 do 
-    echo 'Computer Name' && sudo lshw | grep -E '' | head -n1
     echo ${hardware[$i]} && sudo lshw | grep -A ${num[$i]} ${commands[$i]};
 done
 
