@@ -1,6 +1,6 @@
-# **Table of Contents **
+# **Table of Contents**
 
-## Foundations of Computer Science 
+## Foundations of Computer Operations  
 - [Ops Challenge 201-02] (helloworld.sh)
 - [Ops Challenge 201-03] (challenge-03.sh)
 - [Ops Challenge 201-04] (challenge-04.sh)
