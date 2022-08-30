@@ -1,17 +1,31 @@
-# Table of Contents 
+# **Table of Contents **
 
-- [Ops Challenge 02] (helloworld.sh)
-- [Ops Challenge 03] (challenge-03.sh)
-- [Ops Challenge 04] (challenge-04.sh)
-- [Ops Challenge 05] (challenge-05.sh)
-- [Ops Challenge 06] (challenge-06.sh)
-- [Ops Challenge 07] (systeminfo.sh)
-- [Ops Challenge 08] (challenge-08.sh)
-- [Ops Challenge 09] (challenge-09.sh)
-- [Ops Challenge 10] (challenge-10.sh)
-- [Ops Challenge 11] (challenge-11.sh)
-- [Ops Challenge 12] (challenge-12.sh)
-- [Ops Challenge 13] (challenge-13.sh)
+## Foundations of Computer Science 
+- [Ops Challenge 201-02] (helloworld.sh)
+- [Ops Challenge 201-03] (challenge-03.sh)
+- [Ops Challenge 201-04] (challenge-04.sh)
+- [Ops Challenge 201-05] (challenge-05.sh)
+- [Ops Challenge 201-06] (challenge-06.sh)
+- [Ops Challenge 201-07] (systeminfo.sh)
+- [Ops Challenge 201-08] (challenge-08.sh)
+- [Ops Challenge 201-09] (challenge-09.sh)
+- [Ops Challenge 201-10] (challenge-10.sh)
+- [Ops Challenge 201-11] (challenge-11.sh)
+- [Ops Challenge 201-12] (challenge-12.sh)
+- [Ops Challenge 201-13] (challenge-13.sh)
+
+## Networking and Systems Administration 
+- [Ops Challenge 301-02] () 
+- [Ops Challenge 301-03] () 
+- [Ops Challenge 301-04] () 
+- [Ops Challenge 301-05] () 
+- [Ops Challenge 301-06] () 
+- [Ops Challenge 301-07] () 
+- [Ops Challenge 301-08] () 
+- [Ops Challenge 301-09] () 
+- [Ops Challenge 301-10] () 
+- [Ops Challenge 301-11] () 
+- [Ops Challenge 301-12] () 
 
 This repo is a collection of ops challenges from Code Fellows. 
 
