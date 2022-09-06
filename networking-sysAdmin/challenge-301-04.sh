@@ -30,6 +30,4 @@ do
     esac
 done
 
-
-
 # End 
