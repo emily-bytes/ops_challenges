@@ -11,7 +11,7 @@
 var1="/var/log/syslog" 
 var2="/var/log/wtmp-"
 
-# This function clears the contents of these logs:
+# This function clears the contents of logs
 clearLogs() {
     cat $1 
     cat /dev/null > $1 
