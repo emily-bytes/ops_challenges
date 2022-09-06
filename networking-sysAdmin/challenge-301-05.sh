@@ -7,7 +7,7 @@
 
 # Main
 
-# Initiate variables
+# Declare variables containing logs 
 var1="/var/log/syslog" 
 var2="/var/log/wtmp-"
 
@@ -18,7 +18,7 @@ clearLogs() {
     cat $1 
 }
 
-# Pass parameters into clearLogs function
+# Call clearLogs function and pass in parameters 
 clearLogs $var1
 clearLogs $var2
 
