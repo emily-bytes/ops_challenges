@@ -10,10 +10,9 @@ import os
 # subdirectories, and files for user-provided directory
 # path
 
-# Read user input and assign to a variable
-file = input("Enter the filename: ")
-
-# Declare function
+# Define function: this function takes in user 
+# input and prints directories, subdirectories, 
+# and files for user-provided directory paths
 def generate_directory(file):
     for root, dirs, files in os.walk(file):
         print(root)
@@ -21,8 +20,11 @@ def generate_directory(file):
         print(files)
 
 # Main
+# Read user input and assign to a variable
+file = input("Enter the filename: ")
+
 # Pass variable into function 
-generate_directory(file) # /var/log
+generate_directory(file)    # for example: /var/log
 
 # End 
 
