@@ -11,25 +11,20 @@ import os
 # path
 
 # Read user input and assign to a variable
-root = input("Enter root: ")
-dirs = input("Enter dirs: ")
-files = input("Enter files: ")
-
-# file = input("Enter the filename: ")
-# extension = file.split("/")
-# print("The directory is : " + (extension[-1]))
-
+file = input("Enter the filename: ")
 
 # Declare function
-# def generate_directory():
-for(root, dirs, files) in os.walk("testdir"):
-    print(root)
-    print(dirs)
-    print(files)
-
+def generate_directory(file):
+    for root, dirs, files in os.walk(file):
+        print(root)
+        print(dirs)
+        print(files)
 
 # Main
 # Pass variable into function 
+generate_directory(file) # /var/log
 
 # End 
+
+
 
