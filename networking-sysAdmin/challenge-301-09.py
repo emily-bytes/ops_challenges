@@ -16,9 +16,10 @@ print(coding_languages[3])
 
 # Print the sixth through tenth element of the list
 print("Print the sixth through tenth element of the list: ")
-print(coding_languages[6:11])
+print(coding_languages[5:11])
 
 # Change the value of the seventh element to "onion"
+print("Change the value of the seventh element to 'onion'")
 coding_languages[6] = "onion"
 print(coding_languages)
 
