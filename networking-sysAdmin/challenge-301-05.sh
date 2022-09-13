@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Script: Ops 301 Class 03 Ops Challenge Solution
+# Script: Ops 301 Class 05 Ops Challenge Solution
 # Author: Emily Lee
 # Date of latest revision: 9/5/2022
 # Purpose: This script clears the content of logs

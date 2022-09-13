@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Script: Ops 301 Class 03 Ops Challenge Solution
+# Script: Ops 301 Class 04 Ops Challenge Solution
 # Author: Emily Lee
 # Date of latest revision: 9/5/2022
 # Purpose: This script launches a menu system and allows the

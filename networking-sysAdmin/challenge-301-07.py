@@ -3,7 +3,7 @@
 # import libraries 
 import os
 
-# Script: Ops 301 Class 03 Ops Challenge Solution
+# Script: Ops 301 Class 07 Ops Challenge Solution
 # Author: Emily Lee
 # Date of latest revision: 9/7/2022
 # Purpose: This Python script generates directories,

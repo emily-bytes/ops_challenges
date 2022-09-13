@@ -1,4 +1,4 @@
-# Script: Ops 301 Class 12 Ops Challenge Solution
+# Script: Ops 301 Class 08 Ops Challenge Solution
 # Author: Emily Lee
 # Date of latest revision: September 08, 2022
 # Purpose: This powershell script adds a user to AD

@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# Script: Ops 301 Class 03 Ops Challenge Solution
+# Script: Ops 301 Class 10 Ops Challenge Solution
 # Author: Emily Lee
 # Date of latest revision: September 12, 2022
 # Purpose: This Python script creates if statements using

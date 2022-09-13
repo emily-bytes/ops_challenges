@@ -1,6 +1,6 @@
 #!usr/bin/python 3
 
-# Script: Ops 301 Class 03 Ops Challenge Solution
+# Script: Ops 301 Class 09 Ops Challenge Solution
 # Author: Emily Lee
 # Date of latest revision: September 9, 2022
 # Purpose: This Python script utilizes a list 
