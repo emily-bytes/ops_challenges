@@ -1,18 +1,18 @@
 # **Table of Contents**
 
 ## Class 201: Foundations of Computer Operations  
-- [Ops Challenge 201-02] (helloworld.sh)
-- [Ops Challenge 201-03] (challenge-03.sh)
-- [Ops Challenge 201-04] (challenge-04.sh)
-- [Ops Challenge 201-05] (challenge-05.sh)
-- [Ops Challenge 201-06] (challenge-06.sh)
-- [Ops Challenge 201-07] (systeminfo.sh)
-- [Ops Challenge 201-08] (challenge-08.sh)
-- [Ops Challenge 201-09] (challenge-09.sh)
-- [Ops Challenge 201-10] (challenge-10.sh)
-- [Ops Challenge 201-11] (challenge-11.sh)
-- [Ops Challenge 201-12] (challenge-12.sh)
-- [Ops Challenge 201-13] (challenge-13.sh)
+- [Ops Challenge 201-02] (computer-operations/helloworld.sh)
+- [Ops Challenge 201-03] (computer-operations/challenge-03.sh)
+- [Ops Challenge 201-04] (computer-operations/challenge-04.sh)
+- [Ops Challenge 201-05] (computer-operations/challenge-05.sh)
+- [Ops Challenge 201-06] (computer-operations/challenge-06.sh)
+- [Ops Challenge 201-07] (computer-operations/systeminfo.sh)
+- [Ops Challenge 201-08] (computer-operations/challenge-08.sh)
+- [Ops Challenge 201-09] (computer-operations/challenge-09.sh)
+- [Ops Challenge 201-10] (computer-operations/challenge-10.sh)
+- [Ops Challenge 201-11] (computer-operations/challenge-11.sh)
+- [Ops Challenge 201-12] (computer-operations/challenge-12.sh)
+- [Ops Challenge 201-13] (computer-operations/challenge-13.sh)
 
 ## Class 301: Networking and Systems Administration 
 - [Ops Challenge 301-02] () 
