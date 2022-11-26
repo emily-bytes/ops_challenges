@@ -1,6 +1,6 @@
 # **Table of Contents**
 
-## Foundations of Computer Operations  
+## Class 201: Foundations of Computer Operations  
 - [Ops Challenge 201-02] (helloworld.sh)
 - [Ops Challenge 201-03] (challenge-03.sh)
 - [Ops Challenge 201-04] (challenge-04.sh)
@@ -14,7 +14,7 @@
 - [Ops Challenge 201-12] (challenge-12.sh)
 - [Ops Challenge 201-13] (challenge-13.sh)
 
-## Networking and Systems Administration 
+## Class 301: Networking and Systems Administration 
 - [Ops Challenge 301-02] () 
 - [Ops Challenge 301-03] () 
 - [Ops Challenge 301-04] () 
