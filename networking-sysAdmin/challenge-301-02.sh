@@ -8,19 +8,14 @@
 # current date and time to the filename 
 
 # Main
-
-# Initialize variable and assign path to network_report.txt
-# $Path="/temp-syslog.txt"
-today=$(date +%Y-%m-%d) 
-echo $today 
+LOG_FILE="./syslog_$(date +%Y-%m-%d)"
 
 function copySyslog
-{
-    cp /var/log/syslog /home/emilit/ops_challenges/networking-sysAdmin
-    mv syslog syslog$today
+{   
+    cp /var/log/syslog $LOG_FILE
 }
 
-# Call function
+# Function call 
 copySyslog 
 
 # End 
