@@ -9,18 +9,30 @@ import os
 # appends three lines, prints to the screen the first
 # line, then deletes the .txt file
 
-# create a new .txt file and append three lines 
-file = open("testfile.txt", "w")
-line = ["I love Code Fellows!\n", "I love coding\n", "Only one week left of 301\n"]
-file.writelines(line)
-file.close()
+# create a new text file 
+filename = "testfile.txt"
 
-# print the first line to screen 
-file = open("testfile.txt", "r")
-print(file.read(21))
+# append three lines to the file 
+line = ["I love Code Fellows!", "I love coding", "Only one week left of 301"]
 
-# delete the .txt file 
-if os.path.exists("testfile.txt"):
-  os.remove("testfile.txt")
+with open(filename, "a") as file:
+  for i in range(len(line)):
+    file.write(line[i] + "\n")
+
+# verify lines were appended to the text file 
+# with open(filename, "r") as file:
+#     lines = file.readlines()
+#     for line in lines:
+#         print(line.strip())
+
+# print first line to screen 
+with open(filename, "r") as file:
+  first_line = file.readline()
+  print(first_line)
+
+# delete the .text  file 
+if os.path.exists(filename):
+  os.remove(filename)
+  print("The file has successfully been deleted.")
 else:
   print("The file does not exist.")
